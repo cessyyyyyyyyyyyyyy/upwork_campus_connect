@@ -1,0 +1,498 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #6e529d 0%,#d97b93 100%);
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+.logo img {
+    height: 50px; /* Adjust the logo size */
+}
+
+/* Search Bar Container */
+.search-bar-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    width: 80%; /* Adjust width as needed */
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation links */
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Main Section */
+main {
+    padding: 40px 10%;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.welcome-message h2 {
+    color: #ff5e57;
+    font-size: 2.5rem;
+}
+
+.welcome-message p {
+    font-size: 1.2rem;
+}
+
+/* Featured Categories */
+.featured-categories {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.category-item {
+    background-color: #ff8a65;
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category-item:hover {
+    transform: scale(1.1);
+    background-color: #ff5722;
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 20px;
+}
+
+.submit-review {
+    background-color: #ff8a65;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.submit-review input,
+.submit-review select,
+.submit-review textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submit-review button {
+    background-color: #ff5e57;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-review button:hover {
+    background-color: #ff5722;
+}
+
+
+.submit-review {
+    background-color: #ff8a65;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.submit-review input,
+.submit-review select,
+.submit-review textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submit-review button {
+    background-color: #ff5e57;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-review button:hover {
+    background-color: #ff5722;
+}
+
+
+
+#freelancer-reviews {
+    display: flex;
+    flex-wrap: wrap;  /* Allows the cards to wrap into new rows */
+    justify-content: center;  /* Centers the cards */
+    gap: 20px;  /* Adds space between the cards */
+}
+
+
+#freelancer-reviews {
+    display: grid;  /* Use grid layout for better control */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));  /* Creates responsive columns */
+    gap: 10px;  /* Set the gap between cards */
+    justify-items: center;  /* Center cards within each grid cell */
+}
+
+.testimonial-card {
+    padding: 20px;
+    background-color: #fff;  /* White background for better readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 100%;  /* Make sure it takes the full width of the grid cell */
+    max-width: 240px;  /* Limit the maximum width of the card */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card h4 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+.review-text {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+
+/* Job Listings Section */
+.job-listings-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centers the content horizontally */
+    justify-content: center;  /* Vertically centers the content */
+    padding: 40px 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;  /* Optional max-width for better control */
+}
+
+/* Centering the Job Listings Header */
+h1 {
+    text-align: center;  /* Centers the title */
+    color: #333;  /* Ensure the header color matches your design */
+    font-size: 2rem;
+    margin-bottom: 20px;  /* Adds space below the header */
+}
+
+/* Job Listings Flexbox */
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Job Item Cards */
+.job-item {
+    background-color: #ffefeb;
+    padding: 40px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 150px;  /* Adjust the width of the card */
+    transition: transform 0.3s ease;
+}
+
+.job-item:hover {
+    transform: scale(1.05);
+}
+
+.job-item h3 {
+    color: #ff5e57;
+}
+
+.job-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.job-item small {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+.apply-button {
+    background-color: #3586ff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1rem;
+}
+
+.apply-button:hover {
+    background-color: #2a6ecf;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+footer {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to bottom, #2b95db 0%, #d97b93 100%); /* Gradient background */
+    min-height: 60px; /* Small footer height */
+    padding: 5px 10px; /* Adjusted padding for a smaller footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff; /* Ensures text remains readable on gradient */
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex: 1;
+  }
+  
+  .footer-left .footer-logo {
+    margin-right: 10px;
+  }
+  
+  .footer-left .footer-logo img {
+    max-width: 80px;
+    height: auto;
+  }
+  
+  .footer-left p {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-right h3 {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 8px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  
+  .social-icon__link:hover {
+    transform: translateY(-3px);
+  }
+  
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
